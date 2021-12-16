@@ -6,28 +6,28 @@ const Footer = () => (
       <tbody>
         <tr style={{ display: 'inline-block' }}>
           <td>
-            <a href="https://github.com/nbisigna/" target="_blank">
+            <a href="https://www.wingchunskills.com" target="_blank">
               <span
                 style={{ fontSize: '3em', color: 'black', padding: '0 4px' }}
               >
                 <i className="link fab fa-github"></i>
               </span>
             </a>
-            <a href="https://linkedin/in/nbisigns" target="_blank">
+            <a href="https://www.wingchunskills.com" target="_blank">
               <span
                 style={{ fontSize: '3em', color: 'black', padding: '0 4px' }}
               >
                 <i className="link fab fa-linkedin"></i>
               </span>
             </a>
-            <a href="https://www.npmjs.com/~nbisigna" target="_blank">
+            <a href="https://www.wingchunskills.com" target="_blank">
               <span
                 style={{ fontSize: '3em', color: 'black', padding: '0 4px' }}
               >
                 <i className="link fab fa-npm"></i>
               </span>
             </a>
-            <a href="https://www.instagram.com/nickbisignano/" target="_blank">
+            <a href="https://www.wingchunskills.com" target="_blank">
               <span
                 style={{ fontSize: '3em', color: 'black', padding: '0 4px' }}
               >
@@ -35,7 +35,7 @@ const Footer = () => (
               </span>
             </a>
             <a
-              href="https://www.youtube.com/channel/UCcNI3QYJA2VeidzV-39UbMA"
+              href="https://www.wingchunskills.com"
               target="_blank"
             >
               <span
@@ -44,7 +44,7 @@ const Footer = () => (
                 <i className="link fab fa-youtube-square"></i>
               </span>
             </a>
-            <a href="https://twitter.com/nickbisignano" target="_blank">
+            <a href="https://www.wingchunskills.com" target="_blank">
               <span
                 style={{ fontSize: '3em', color: 'black', padding: '0 4px' }}
               >
@@ -52,7 +52,7 @@ const Footer = () => (
               </span>
             </a>
             <a
-              href="https://www.facebook.com/nick.bisignano.7/"
+              href="https://www.wingchunskills.com"
               target="_blank"
             >
               <span
@@ -67,7 +67,7 @@ const Footer = () => (
     </table>
     <div style={{ border: '1px solid lightgrey' }} />
     <br />
-    <div>© {new Date().getFullYear()} Nick Bisignano</div>
+    <div>© {new Date().getFullYear()} WingChunSkills</div>
     <br />
   </div>
 );

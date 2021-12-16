@@ -62,6 +62,7 @@
           const password = document.getElementById('password').value;
           const xhttp = new XMLHttpRequest();
           xhttp.onreadystatechange = function() {
+            console.log('did hit submit');
             if (xhttp.readyState == 4 && xhttp.status == 200) {
               let now = new Date();
               now.setTime(now.getTime() + 3600000);

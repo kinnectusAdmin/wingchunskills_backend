@@ -23,7 +23,7 @@ const User = sequelize.define('User', {
 }, {
   // Other model options go here
 });
-
+console.log('should be doing stuff....');
 await sequelize.sync({ force: true });
 console.log("All models were synchronized successfully.");
 // `sequelize.define` also returns the model

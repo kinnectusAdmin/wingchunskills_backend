@@ -22,9 +22,9 @@ app.get('/admin', (req, res) => {
   res.sendFile(__dirname + '/login.html');
 });
 
-// app.get('*', (req, res) => {
-//   res.sendFile(__dirname + '/404.html');
-// });
+app.get('*', (req, res) => {
+  res.sendFile(__dirname + '/404.html');
+});
 
 app.listen(port, () => {
   console.log('Server started on port ' + port);

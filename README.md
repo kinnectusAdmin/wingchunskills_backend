@@ -1,3 +1,3 @@
-#Nicks Blog
+#WingChunSkills
 
-- A mini blog built using React w/ PostgreSQL
+- A backend built for the wing chun skills mobile app using React w/ PostgreSQL

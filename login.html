@@ -60,6 +60,8 @@
           e.preventDefault();
           const email = document.getElementById('email').value;
           const password = document.getElementById('password').value;
+          console.log(email);
+          console.log(password);
           const xhttp = new XMLHttpRequest();
           xhttp.onreadystatechange = function() {
             console.log('did hit submit');

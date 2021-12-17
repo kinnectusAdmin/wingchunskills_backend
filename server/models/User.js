@@ -1,5 +1,5 @@
-const { Model, Sequelize } = require('sequelize');
-const sequelize = require('../database');
+const { Sequelize, DataTypes, Model } = require('sequelize');
+const sequelize = new Sequelize('sqlite::memory:');
 
 class User extends Model {}
 
@@ -26,8 +26,9 @@ User.init(
   },
   {
     sequelize,
-    modelName: 'user'
+    modelName: 'User'
   }
 );
+console.log(User === sequelize.models.User)
 sequelize.sync();
 module.exports = User;

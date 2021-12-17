@@ -44,7 +44,7 @@ router.post(
 
       const isMatch = await bcrypt.compare(
         password,
-        user[0].dataValues.password
+        user[0].password
       );
 
       if (!isMatch) {
@@ -55,9 +55,9 @@ router.post(
 
       const payload = {
         user: {
-          id: user[0].dataValues.id,
-          name: user[0].dataValues.name,
-          email: user[0].dataValues.email
+          id: user[0].id,
+          name: user[0].name,
+          email: user[0].email
         }
       };
 

@@ -23,10 +23,10 @@ router.post(
     check('password', 'Password is required').exists()
   ],
   async (req, res) => {
-    // console.log(req.body);
+    console.log(req.body);
 
     const errors = validationResult(req);
-    // console.log(errors.array());
+    console.log(errors.array());
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
@@ -35,7 +35,7 @@ router.post(
     try {
       let user = await User.findAll({ where: { email: email.toLowerCase() } });
       //   let user = await User.findOne({ email: email.toLowerCase() });
-      // console.log(user);
+      console.log(user);
       if (!user) {
         return res
           .status(400)
@@ -61,7 +61,7 @@ router.post(
         }
       };
 
-      // console.log(payload.user);
+      console.log(payload.user);
 
       jwt.sign(
         payload,

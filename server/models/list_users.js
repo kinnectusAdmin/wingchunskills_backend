@@ -1,5 +1,5 @@
 const User = require('./User');
 
-const users = User.findAll();
+const users = await User.findAll();
 
 process.stdout.write(users);

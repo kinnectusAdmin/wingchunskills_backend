@@ -6,11 +6,14 @@ const users = require('./server/routes/users');
 app.use(express.json({ extended: false }));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(__dirname + '/public'));
-
+var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 
 app.use(cookieParser());
-
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 require('./server/database');
 
 

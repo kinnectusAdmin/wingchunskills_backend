@@ -16,5 +16,5 @@ Post.init(
   },
   { sequelize, modelName: 'post' }
 );
-// sequelize.sync();
+sequelize.sync();
 module.exports = Post;
